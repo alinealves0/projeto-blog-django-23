@@ -1,3 +1,3 @@
 #!/bin/sh
 makemigrations.sh
-python manage.py migrete --noinput
+python manage.py migrate --noinput
