@@ -9,5 +9,5 @@ def random_letterrs(k=5):
     ))
 
 
-def slugify_new(text):
-    return slugify(text) + '-' + random_letterrs(4)
+def slugify_new(text, k=5):
+    return slugify(text) + '-' + random_letterrs(k)
