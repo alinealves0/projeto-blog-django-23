@@ -3,8 +3,8 @@
 <head>
     {% include 'blog/partials/_head.html' %}
 </head>
-<body class="dark-theme">
-    
+<body>
+  <div class="blog-wrapper"> 
    {% include 'blog/partials/_header.html' %}
     
    {% block content %}{% endblock content %}
@@ -12,7 +12,7 @@
    {% include 'blog/partials/_pagination.html' %}
 
    {% include 'blog/partials/_footer.html' %} 
-   
-   {% include 'blog/partials/_temp.html' %}
+      
+  </div>
 </body>
 </html>
