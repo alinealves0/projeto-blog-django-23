@@ -52,3 +52,7 @@ class PostAdmin(admin.ModelAdmin):
         'slug': ('title',),
     }
     autocomplete_fields = 'tags', 'category',
+
+def save_model(self, request, obj, form, change):
+    print('Está alterando?', change)
+    obj.save()
