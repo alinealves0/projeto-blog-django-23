@@ -118,7 +118,7 @@ class Post(models.Model):
         null=False, blank=True, max_length=255,
     )
 
-    # excerpt = models.CharField(max_length=150)
+    excerpt = models.CharField(max_length=150, default="",)
     is_published = models.BooleanField(
         default=False,
         help_text=(
