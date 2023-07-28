@@ -53,7 +53,7 @@ class Category(models.Model):
         verbose_name_plural = 'Categories'
 
 
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, default="")
     slug = models.SlugField(
         unique=True, default=None, 
         null=True, blank=True, max_length=255,
@@ -148,7 +148,7 @@ class Post(models.Model):
     )
     category = models.ForeignKey(
         Category, on_delete=models.SET_NULL, null=True, blank=True,
-        default=None,
+        default=None
     )
     tags = models.ManyToManyField(Tag, blank=True, default='')
 

@@ -1,0 +1,14 @@
+SECRET_KEY="SHA256:MmdjkF4CUUf56daQk1Z1bsH7ABNR8m4WBs9+9Iho+Zs"
+		
+# 0 False, 1 True
+DEBUG="1"
+		
+# Comma Separated values
+ALLOWED_HOSTS="127.0.0.1, localhost"
+
+DB_ENGINE="django.db.backends.postgresql"
+POSTGRES_DB="blog_base_de_dados"
+POSTGRES_USER="blog_user"
+POSTGRES_PASSWORD="blog_user_password"
+POSTGRES_HOST="psql"
+POSTGRES_PORT="5432"
